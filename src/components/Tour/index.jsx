@@ -42,7 +42,7 @@ export function Tour({ tour, removeTour }) {
 
         <div className={styles.footer}>
           <button type='button' onClick={() => removeTour(tour.id)}>
-            Not interested
+            I'm not interested
           </button>
         </div>
       </div>
