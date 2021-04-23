@@ -1,0 +1,58 @@
+:root {
+  --dark-blue: #102a42;
+  --light-blue: #49a6e9;
+  --light-gray: #F1F5F8;
+  --red: #BB2525;
+  --text: #617D98;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body { 
+    background: var(--light-gray);
+    -webkit-font-smoothing: antialiased;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  html { 
+    @media (max-width: 1080px) {
+      font-size: 93.75%
+    }
+    @media (max-width: 720px) {
+      font-size: 87.5%
+    }
+  }
+
+  main {
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 5rem 0;
+    display: grid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cardGroup {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin: 3rem auto 0;
+  }
+
+  .showallButton {
+    border: none;
+    background: var(--light-blue);
+    font-size: 1rem;
+    color: #FFF;
+    cursor: pointer;
+    height: 2.5rem;
+    width: 12rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 2rem;
+  }
